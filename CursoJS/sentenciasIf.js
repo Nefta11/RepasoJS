@@ -8,6 +8,13 @@ if(miNumero > 0 ){
     console.log(`Valor positivo ${miNumero}`)
 }
 //Sentencias else
-else{
-    console.log("Condicion no cumplida")
-} //Tambien se puede omitir las llaves
+else if (miNumero < 0){
+    console.log(`Valor negativo ${miNumero}`)
+} else{
+    console.log(`Valor cero ${miNumero}`)
+}
+
+
+
+
+
