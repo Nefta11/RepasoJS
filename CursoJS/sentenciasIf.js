@@ -26,8 +26,10 @@ miNumero<0?console.log("positivo"):console.log("negativo")
 //Algoritmo para saber si una persona es mayor de edad
 
 const EDAD_ADULTO =18;
-let edadPersona=30;
+let edadPersona=22;
 
 if(edadPersona >= EDAD_ADULTO){
     console.log("La persona es mayor de edad tiene una deda de : ", edadPersona)
+}else{
+    console.log("La persona es menor de edad")
 }
