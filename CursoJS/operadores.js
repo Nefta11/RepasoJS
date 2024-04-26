@@ -39,3 +39,4 @@ let z = false;
 console.log(x)
 
 console.log(`${x} && ${z} -> ${x && z}`)
+
