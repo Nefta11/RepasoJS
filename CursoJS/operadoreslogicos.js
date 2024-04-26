@@ -18,3 +18,16 @@ console.log(`${a} || ${b} -> ${a || b}`)
 //Operador ! (not o No)
 // Invierte el valor original, true-> false, false -> true
 console.log(`${a} -> ${!a}`)
+
+
+//Ejercicio de practica
+
+//Definimos variables de ejemplo
+let minimo = 0, maximo = 5;
+
+//valor para saber si esta dentro de rango
+
+let dato = 3;
+
+let dentroRango = dato >= minimo && dato <= maximo;
+console.log("Valor dentro rango :", dentroRango)
