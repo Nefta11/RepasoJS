@@ -17,4 +17,7 @@ else if (miNumero < 0){
 
 
 
+////OPérador ternario
+//sirve para simplificar toda la sentencia anterior obvio si el codigo es corto
 
+miNumero<0?console.log("positivo"):console.log("negativo")
