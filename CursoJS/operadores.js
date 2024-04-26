@@ -29,3 +29,13 @@ console.log(f)
 
 g=5**3
 console.log(g)
+
+
+//Operadores logicos
+
+let x = true;
+let z = false;
+
+console.log(x)
+
+console.log(`${x} && ${z} -> ${x && z}`)
