@@ -15,8 +15,6 @@ else if (miNumero < 0){
 }
 
 
-
-
 ////OPérador ternario
 //sirve para simplificar toda la sentencia anterior obvio si el codigo es corto
 
