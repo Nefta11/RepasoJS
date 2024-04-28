@@ -30,3 +30,5 @@ if(edadPersona >= EDAD_ADULTO){
 }else{
     console.log("La persona es menor de edad")
 }
+
+
