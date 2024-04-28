@@ -20,7 +20,6 @@ else if (miNumero < 0){
 
 miNumero<0?console.log("positivo"):console.log("negativo")
 
-
 //Algoritmo para saber si una persona es mayor de edad
 
 const EDAD_ADULTO =18;
