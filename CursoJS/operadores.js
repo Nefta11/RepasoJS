@@ -25,7 +25,7 @@ console.log(d)
 f=10%2
 console.log(f)
 
-//Potencia
 
+//Potencia
 g=5**3
 console.log(g)
