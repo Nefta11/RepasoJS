@@ -32,3 +32,19 @@ for(let conta =1; conta <= repe; conta++){
 console.log(conta)
 }
 
+
+
+//Ejerecicio Imprimir 10 numeros de 3 en 3 
+
+let max = 10, min = -11;
+
+console.log('Numeros del 3 al 10')
+for(let contar = 1; contar <= max; contar+=3){
+console.log(contar)
+}
+
+
+console.log('Numeros del 1 al -11')
+for(let cont =1; cont >= min; cont-=3){
+    console.log(cont)
+}
