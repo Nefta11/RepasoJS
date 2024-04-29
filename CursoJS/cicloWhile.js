@@ -56,6 +56,8 @@ for(let cont =1; cont >= min; cont-=3){
 console.log('Realizar la suma de los primeros 5 números utilizando un ciclo for;')
 let maximo = 5, suma = 0;
 for (let numero = 1; numero <= maximo; numero++) {
+//Imprimimos lo que se va asumar
+console.log(`${suma} + ${numero}`)
     suma+=numero
     console.log(suma)
 }
