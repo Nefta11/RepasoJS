@@ -62,3 +62,23 @@ console.log(`${suma} + ${numero}`)
     console.log(suma)
 }
 console.log(`La suma de los numero 1 + 2 + 3 + 4 + 5 es = ${suma}`)
+
+
+//Con while
+
+let numMax=5, contadorSuma=0, numeroIni=1;
+/*while(numeroIni <= numMax){
+    contadorSuma+=numeroIni
+    console.log(`${contadorSuma} + ${numeroIni}`)
+    console.log(contadorSuma)
+    numeroIni++
+}
+console.log(contadorSuma)
+*/
+
+do{
+console.log(`${contadorSuma} + ${numeroIni}`)
+contadorSuma+=numeroIni;
+numeroIni++;
+}while(numeroIni <= numMax)
+console.log(contadorSuma)
