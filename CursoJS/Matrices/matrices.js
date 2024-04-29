@@ -40,3 +40,23 @@ let nuevaMatriz =[[1,2,3],[4,5,6]]
 console.log(`Elemento [0],[1] = ${nuevaMatriz[0][1]}`) 
 console.log(`Elemento [2],[1] = ${nuevaMatriz[1][2]}`) 
 console.log(`Elemento [2],[1] = ${nuevaMatriz[1][0]}`)
+
+
+/////////////////////////////////////////////////
+//Iterar los elementos de una matriz
+
+//No. Renglones
+console.log(nuevaMatriz.length);
+//No.Col(depende del renglon seleccionado)
+console.log(nuevaMatriz[0].length)
+console.log(nuevaMatriz[1].length)
+
+//For que recorre los renglones
+for(let ren = 0; ren < nuevaMatriz.length; ren++){
+    //Columnas
+    for(let col = 0; col < nuevaMatriz[ren].length; col++){
+        console.log(nuevaMatriz[ren][col])
+        console.log(`Elemento [${ren}][${col}] = ${matriz[ren][col]}`)
+    }
+
+}
