@@ -27,3 +27,7 @@ do{
 
 //////Ciclo for
 
+let repe = 5;
+for(let conta =1; conta <= repe; conta++){
+console.log(conta)
+}
