@@ -16,9 +16,9 @@ console.log(contador++);
 //// ciclo do while
 // primero se ejecuta el codigo por lo menos una vez y despues de verifica la condicion
 
-
+let contador1 = 0, repeticion1 = 5 ;
 do{
 
-    console.log(contador++);
+    console.log(contador1++);
 
-}while(contador <= repeticion)
+}while(contador1 <= repeticion1)
