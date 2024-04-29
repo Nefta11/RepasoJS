@@ -22,3 +22,8 @@ do{
     console.log(contador1++);
 
 }while(contador1 <= repeticion1)
+
+
+
+//////Ciclo for
+
