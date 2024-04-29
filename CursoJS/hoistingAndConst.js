@@ -1,5 +1,5 @@
 // Hoisting
-//Signica que podemos primero utilizar una variavle y despues utilizarla
+//Signica que podemos primero definir una variavle y despues utilizarla
 
 //Ejemplo
 
