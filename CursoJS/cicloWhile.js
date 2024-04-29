@@ -36,7 +36,7 @@ console.log(conta)
 
 //Ejerecicio Imprimir 10 numeros de 3 en 3 
 
-let max = 10, min = -11;
+let max = 10, min = -10;
 
 console.log('Numeros del 3 al 10')
 for(let contar = 1; contar <= max; contar+=3){
