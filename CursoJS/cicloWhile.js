@@ -54,9 +54,9 @@ for(let cont =1; cont >= min; cont-=3){
 //Ejercicio Acumulador suma
 
 console.log('Realizar la suma de los primeros 5 números utilizando un ciclo for;')
-
-numero =5, acumulador=0;
-for(let contador = 1; contador <=numero; contador++){
-    acumulador+=numero
-console.log(acumulador)
+let maximo = 5, suma = 0;
+for (let numero = 1; numero <= maximo; numero++) {
+    suma+=numero
+    console.log(suma)
 }
+console.log(`La suma de los numero 1 + 2 + 3 + 4 + 5 es = ${suma}`)
