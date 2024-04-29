@@ -36,7 +36,6 @@ variableGlobal = 33;
 miFuncion(variableGlobal);
 
 
-
 //////////////////////////////////////////////////////////////////
 //Funciones recursivas
 //se llaman asi misma 
