@@ -27,4 +27,5 @@ console.log(`Elemento 4 - [0]: ${numerosArreglo[4]}`)
 
 for (let i =0; i < numerosArreglo.length; i++){
 console.log(numerosArreglo[i])
+console.log(`Arreglo[${i}] = ${numerosArreglo[i]}`)
 }
