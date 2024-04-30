@@ -3,8 +3,6 @@
 //sintaxis let<nombre-matriz>[[],[]]
 // indices (renglon, columna)
 
-
-
 //Declaracion de una matriz
 
 let matriz = [[],[]];
