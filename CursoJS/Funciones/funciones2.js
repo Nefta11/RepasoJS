@@ -59,5 +59,3 @@ function funcionRecursiva(numero){
 //LLamamos a nuestra funcion
 
 funcionRecursiva(3);
-
-
