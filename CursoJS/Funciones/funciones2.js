@@ -59,3 +59,11 @@ function funcionRecursiva(numero){
 //LLamamos a nuestra funcion
 
 funcionRecursiva(3);
+
+function calcularEdad(añoNacimieno){
+    let edad = 2024 - añoNacimieno ;
+    return edad;
+}
+
+edad = calcularEdad(2000);
+console.log(edad)
