@@ -27,3 +27,5 @@ console.log(persona1.nombre)
 
 let persona2 = new Persona ("Janeth", "Amixtlan")
 console.log(persona2)
+
+//AQUI NO APLICA EL HOISTING YA QUE PRIMERO DEBEMOS DECLARAR NUESTRA CLASE Y LUEGO NUESTROS OBJETOS
