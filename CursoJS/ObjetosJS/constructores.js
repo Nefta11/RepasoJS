@@ -42,3 +42,11 @@ let miCadena1 = new String("Holaa"); //Esta es la mas formal
 let miCadena2 = ("Holaaa") // Esta es la mas recomendable
 
 
+//Prototype en el objeto
+//SIrve para agregar un nuevo atributo y metodo asociado a un objeto
+Persona.prototype.tel = 7641146446
+
+console.log(padre.tel)
+
+hijo.tel= 5525098119
+console.log(hijo.tel)
