@@ -4,15 +4,26 @@
 
 class Persona {
     constructor(nombre, apellido){
-        this.nombre= nombre;
-        this.apellido=apellido;
+        this._nombre= nombre;
+        this._apellido=apellido;
 
     }
 
+    get nombre(){ // Creacion de un metodo get
+        return this._nombre
+    }
+
+    set nombre(nombre){ // Creacion de un metodo set para modificar el valor de nombre
+        this._nombre = nombre;
+    }
 }
 
 let persona1 = new Persona("Neftali","Vergara");
 console.log(persona1)
+
+console.log(persona1.nombre)//Mnada a llamar el metodo get
+persona1.nombre= "Neftali Arturo";
+console.log(persona1.nombre)
 
 let persona2 = new Persona ("Janeth", "Amixtlan")
 console.log(persona2)
