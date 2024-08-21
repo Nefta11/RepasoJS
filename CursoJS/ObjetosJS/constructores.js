@@ -29,3 +29,16 @@ padre.apellido="Hernandez"
 
 console.log(padre)
 
+
+
+
+
+// Distintas maneras de Crear Objetos
+
+let miObjeto = new Object();
+let miObjeto2 = {}
+
+let miCadena1 = new String("Holaa"); //Esta es la mas formal
+let miCadena2 = ("Holaaa") // Esta es la mas recomendable
+
+
