@@ -22,6 +22,10 @@ class Persona {
     set apellido(apellido){
         this._apellido = apellido;
     }
+
+    nombreCompleto(){
+        return this._nombre+ " "+ this._apellido;
+    }
 }
 
 
@@ -46,3 +50,4 @@ console.log(persona1)
 
 let Empleado1 = new Empleado ("Jorge", "Sayayin", "Ventas Piso")
 console.log(Empleado1)
+console.log(Empleado1.nombreCompleto()) // Aqui Heredamos metodos de la clase padre
