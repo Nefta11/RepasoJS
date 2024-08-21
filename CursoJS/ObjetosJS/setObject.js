@@ -21,7 +21,7 @@ let TheBest = {
 
 console.log(TheBest.lang)
 
-TheBest.lang = "Esp";
+TheBest.lang = "Ing";
 
 console.log(TheBest.lang)
 console.log(TheBest.lenguaje)
