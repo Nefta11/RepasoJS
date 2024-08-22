@@ -72,7 +72,7 @@ class EmpleadoSiu extends PersonaSiuu {
     }
 
     datosCompletos(){
-        return "idPersona "+super.datosCompletos()+" idEmpleado"+" "+this._idEmpleado+"  - "+this._sueldo;
+        return `idPersona ${super.datosCompletos()} idEmpleado ${this._idEmpleado}  - ${this._sueldo}`;
     }
 }
 
