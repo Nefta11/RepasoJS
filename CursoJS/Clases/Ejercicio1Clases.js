@@ -7,9 +7,13 @@ class PersonaSiuu {
         this._apellido=apellido;
         this._edad=edad;
 
-        this.idPersona = PersonaSiuu.contador++;
+        this._idPersona = PersonaSiuu.contador++;
     }
 
+    get idPersona(){
+        return this._idPersona
+    }
+    
     get nombre(){
         return this._nombre
     } 
@@ -35,7 +39,7 @@ class PersonaSiuu {
     }
 
     datosCompletos(){
-        return this.idPersona+ " -"+ this._nombre+" "+this._apellido+" "+this._edad+" años";
+        return this._idPersona+ " -"+ this._nombre+" "+this._apellido+" "+this._edad+" años";
     }
 
     toString(){
@@ -57,6 +61,10 @@ class EmpleadoSiu extends PersonaSiuu {
 
     set sueldo(sueldo){
         this._sueldo= sueldo;
+    }
+
+    datosCompletos(){
+        return super.datosCompletos()+"  - "+this._sueldo;
     }
 }
 
