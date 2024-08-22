@@ -26,6 +26,10 @@ class Persona {
     nombreCompleto(){
         return this._nombre+ " "+ this._apellido;
     }
+        //Sobreescribiendo el metodo de la clase padre )(Object)
+    toString(){
+        return this.nombreCompleto();//Se aplica polimorfismo
+    }
 }
 
 
@@ -49,13 +53,18 @@ class Empleado extends Persona {
 //MODIFICAR EL COMPORTAMIENDTO DE ALGUN METODO DEFINIDO DE LA CLASE PADRE 
            //Sobreescritura
         nombreCompleto(){
-            return super.nombreCompleto()+" "+this._departamento;
+            return super.nombreCompleto()+" -  "+this._departamento;
         }
 }
 
 let persona1 = new Persona ('Neftali', 'Vergara')
-console.log(persona1)
+console.log(persona1.toString())
 
 let Empleado1 = new Empleado ("Jorge", "Sayayin", "Ventas Piso")
 console.log(Empleado1)
 console.log(Empleado1.nombreCompleto()) // Aqui Heredamos metodos de la clase padre
+
+
+
+//Metodo toString
+console.log(Empleado1.toString())
