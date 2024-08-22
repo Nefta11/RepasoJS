@@ -43,6 +43,14 @@ class Empleado extends Persona {
     set departamento(departamento){
         this._departamento = departamento;
     }
+    
+
+//sOBREESCRITURA EN JAVA SCRIPT
+//MODIFICAR EL COMPORTAMIENDTO DE ALGUN METODO DEFINIDO DE LA CLASE PADRE 
+           //Sobreescritura
+        nombreCompleto(){
+            return super.nombreCompleto()+" "+this._departamento;
+        }
 }
 
 let persona1 = new Persona ('Neftali', 'Vergara')
