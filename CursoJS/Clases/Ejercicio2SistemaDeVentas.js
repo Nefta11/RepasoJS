@@ -67,20 +67,26 @@ class Orden {
     mostrarOrden(){
         let productoOrden = "";
         for (let producto of this._productos){
-            productoOrden += producto.toString() + " ";
+            productoOrden += '\n{'+ producto.toString() +'}';
         }
-        console.log(`Orden: ${this._idOrden} 
-            Total: ${this.calcularTotal()} 
-            Productos: ${productoOrden}`);
+        console.log(`Orden: ${this._idOrden} Total: ${this.calcularTotal()} Productos: ${productoOrden}`);
     }
 }
 
 // Ejemplo de uso
 let producto1 = new Producto("Camisa", 200);
 let producto2 = new Producto("Pantalón", 455);
+let producto3 = new Producto("Zapatos", 600);
+let producto4 = new Producto("Cinturón", 150);
 
 let orden1 = new Orden();
 orden1.agregarProducto(producto1);
 orden1.agregarProducto(producto2);
 
 orden1.mostrarOrden();
+
+let orden2 = new Orden();
+orden2.agregarProducto(producto3);
+orden2.agregarProducto(producto4);
+
+orden2.mostrarOrden();
