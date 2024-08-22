@@ -35,6 +35,50 @@ class Producto {
 }
 
 
+class Orden {
+    static contadorOrdenes = 1;
+    static MAX_PRODUCTOS(){
+        return 5;
+    }
+
+    constructor(){
+        this._idOrden = Orden.contadorOrdenes++;
+        this._productos = [];
+        this._contadorProductosAgregados =0;
+    }
+
+    get idOrden (){
+        return this._idOrden
+    }
+
+    agregarProducto(producto){
+        if(this._productos.length < Orden.MAX_PRODUCTOS){
+            this._productos.push(producto);
+
+        }
+        else{
+            console.log("Numero superado de productos elimina bobo")
+        }
+    }
+
+    calcularTotal(){
+        let totalVenta = 0 ;
+        for (let producto of this._productos){
+            totalVenta += producto.precio;
+        }
+        return totalVenta;
+    }
+
+    mostrarOrden(){
+        let productoOrden = " ";
+        for (let producto of this._productos){
+            productoOrden+= producto.toString() + " ";
+        }
+        console.log(`Orden: ${this._idOrden} Total: ${this.calcularTotal}, Productos: ${productoOrden} `)
+    }
+}
+
+
 let producto1 = new Producto("Camisa", 200)
 let producto2 = new Producto("Pantalon", 455)
 
