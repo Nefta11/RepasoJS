@@ -30,7 +30,7 @@ class Producto {
     }
 
     toString(){
-        return `idProducto: ${this._idProducto}, Nombre: ${this._nombre}, Precio: ${this._precio}`
+        return `idProducto: ${this._idProducto}, Nombre: ${this._nombre}, Precio: $ ${this._precio}`
     }
 }
 
