@@ -1,12 +1,11 @@
-//Clase de producto
-
+// Clase de producto
 class Producto {
-
     static contadorProductos = 1;
+
     constructor(nombre, precio){
         this._idProducto = Producto.contadorProductos++;
         this._nombre = nombre;
-        this._precio= precio;
+        this._precio = precio;
     }
 
     get idProducto(){
@@ -17,23 +16,22 @@ class Producto {
         return this._nombre;
     }
 
-    set (nombre){
-        this._nombre=nombre;
+    set nombre(nombre){
+        this._nombre = nombre;
     }
 
-    get (){
+    get precio(){
         return this._precio;
     }
 
-    set (precio){
-        this._precio= precio;
+    set precio(precio){
+        this._precio = precio;
     }
 
     toString(){
-        return `idProducto: ${this._idProducto}, Nombre: ${this._nombre}, Precio: $ ${this._precio}`
+        return `idProducto: ${this._idProducto}, Nombre: ${this._nombre}, Precio: $${this._precio}`;
     }
 }
-
 
 class Orden {
     static contadorOrdenes = 1;
@@ -44,25 +42,22 @@ class Orden {
     constructor(){
         this._idOrden = Orden.contadorOrdenes++;
         this._productos = [];
-        this._contadorProductosAgregados =0;
     }
 
     get idOrden (){
-        return this._idOrden
+        return this._idOrden;
     }
 
     agregarProducto(producto){
-        if(this._productos.length < Orden.MAX_PRODUCTOS){
+        if(this._productos.length < Orden.MAX_PRODUCTOS()){
             this._productos.push(producto);
-
-        }
-        else{
-            console.log("Numero superado de productos elimina bobo")
+        } else {
+            console.log("Número máximo de productos alcanzado.");
         }
     }
 
     calcularTotal(){
-        let totalVenta = 0 ;
+        let totalVenta = 0;
         for (let producto of this._productos){
             totalVenta += producto.precio;
         }
@@ -70,17 +65,22 @@ class Orden {
     }
 
     mostrarOrden(){
-        let productoOrden = " ";
+        let productoOrden = "";
         for (let producto of this._productos){
-            productoOrden+= producto.toString() + " ";
+            productoOrden += producto.toString() + " ";
         }
-        console.log(`Orden: ${this._idOrden} Total: ${this.calcularTotal}, Productos: ${productoOrden} `)
+        console.log(`Orden: ${this._idOrden} 
+            Total: ${this.calcularTotal()} 
+            Productos: ${productoOrden}`);
     }
 }
 
+// Ejemplo de uso
+let producto1 = new Producto("Camisa", 200);
+let producto2 = new Producto("Pantalón", 455);
 
-let producto1 = new Producto("Camisa", 200)
-let producto2 = new Producto("Pantalon", 455)
+let orden1 = new Orden();
+orden1.agregarProducto(producto1);
+orden1.agregarProducto(producto2);
 
-console.log(producto1.toString())
-console.log(producto2.toString())
+orden1.mostrarOrden();
