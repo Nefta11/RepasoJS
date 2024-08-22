@@ -30,6 +30,15 @@ class Persona {
     toString(){
         return this.nombreCompleto();//Se aplica polimorfismo
     }
+
+    //Utilizacion de la palabara static
+    static saludar(){
+        console.log("Holaa esto es para ustedes aficion Siuuuuuuu")
+    }
+
+     static saludar2(persona){
+        console.log(persona.nombre+" "+persona.apellido)
+     }
 }
 
 
@@ -68,3 +77,10 @@ console.log(Empleado1.nombreCompleto()) // Aqui Heredamos metodos de la clase pa
 
 //Metodo toString
 console.log(Empleado1.toString())
+
+//persona1.saludar();  No es posible llamar un método static desde un objeto
+
+Persona.saludar(); // Solo se pueden llamar desde clase 
+Persona.saludar2(persona1)
+
+Empleado.saludar2(Empleado1)
