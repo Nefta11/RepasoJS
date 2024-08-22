@@ -1,10 +1,16 @@
 // Herencia en js
 
 class Persona {
+        //Atributos Estaticos en js
+        static contadorObjetosPersona = 0;// Atributo de nuestra clase
+        email = "aquivatucorreo@email.com"//Atributo de nuestros objetos
 
+        
     constructor(nombre, apellido){
         this._nombre=nombre;
         this._apellido= apellido;
+        Persona.contadorObjetosPersona++;
+        console.log("se incrementa contado :"+ Persona.contadorObjetosPersona)
     }
 
     get nombre(){
@@ -36,9 +42,9 @@ class Persona {
         console.log("Holaa esto es para ustedes aficion Siuuuuuuu")
     }
 
-     static saludar2(persona){
+    static saludar2(persona){
         console.log(persona.nombre+" "+persona.apellido)
-     }
+    }
 }
 
 
@@ -84,3 +90,12 @@ Persona.saludar(); // Solo se pueden llamar desde clase
 Persona.saludar2(persona1)
 
 Empleado.saludar2(Empleado1)
+
+console.log(persona1.contadorObjetosPersona)
+console.log(Persona.contadorObjetosPersona)
+
+console.log(Empleado.contadorObjetosPersona)
+
+Empleado1.email="neftaliarturohernandez@gmail.com"
+console.log(Empleado1.email)
+console.log(persona1.email)
