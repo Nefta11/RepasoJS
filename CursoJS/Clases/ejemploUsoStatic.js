@@ -3,10 +3,19 @@ class Persona {
     //Atributos Estaticos en js
     static contadorObjetosPersona = 0;// Atributo de nuestra clase
     
+    static get MAX_OBJ(){
+        return 5;
+    }
+
 constructor(nombre, apellido){
     this._nombre=nombre;
     this._apellido= apellido;
-    this.idPersona = ++Persona.contadorObjetosPersona
+    if (Persona.contadorObjetosPersona < Persona.MAX_OBJ){
+        this.idPersona = ++Persona.contadorObjetosPersona;
+    }
+    else{
+        console.log("Se han superado al maximo de objetos permitidos")
+    }
 }
 
 get nombre(){
@@ -71,3 +80,11 @@ let persona2 = new Persona ("Rocio","Lewandowski")
 console.log(persona2.toString())
 
 console.log(Persona.contadorObjetosPersona)
+
+console.log(Persona.MAX_OBJ)
+
+let persona3 = new Persona("Mariano","Negro de kaka")
+let persona4 = new Persona("Raul", "chirinos")
+let persona5 = new Persona("Raul", "chirinos")
+
+console.log(persona4.toString())
