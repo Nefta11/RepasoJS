@@ -115,7 +115,7 @@ console.log(persona2.toString())
 Empleado1 = new EmpleadoSiu("Rosario","Vergara",54, 1200)
 console.log(Empleado1.toString())
 
-nuevoCliente = new Cliente("Naruto", "Uzumaki",17,"22/08/2024")
+nuevoCliente = new Cliente("Naruto", "Uzumaki",17,new Date())
 console.log(nuevoCliente.toString())
 
 console.log(PersonaSiuu.contador)
