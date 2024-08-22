@@ -30,6 +30,13 @@ class Producto {
     }
 
     toString(){
-        return `idProducto: ${this._idProducto} `
+        return `idProducto: ${this._idProducto}, Nombre: ${this._nombre}, Precio: ${this._precio}`
     }
 }
+
+
+let producto1 = new Producto("Camisa", 200)
+let producto2 = new Producto("Pantalon", 455)
+
+console.log(producto1.toString())
+console.log(producto2.toString())
