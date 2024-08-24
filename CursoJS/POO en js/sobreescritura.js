@@ -25,12 +25,23 @@ class Gerente extends Empleado{
 }
 
 //Ejemplo de polimorfismo
-function imprimir(tipo){
+function determinarTipoObjetc(tipo){
 console.log(    tipo.obtenerDetalles())
     //Mulriples formas en la que se puede llamar un metodo
     //Ya que el metodo obtenerDetalles() viene desde la clase padre Empleado pero es sobreescrita en la clase hija
     //Por lo que dependiendo el tipo sera la forma en que se mande a llama al metodo
 
+    //Ahora utilizaremos la palabra instance OF
+    if(tipo instanceof Gerente){
+        console.log("Es un objeto del tipo gerente")
+        console.log(tipo.departamento)
+    }
+    else if(tipo instanceof Empleado){
+        console.log("Es un tipo Empleado")
+    }
+    else if (tipo instanceof Object){// La clase object es la clase padre de todas las clases en js
+        console.log("Es un tipo object")
+    }
 }
 
 let gerente1= new Gerente("Neftali",27880, "Software")
@@ -38,5 +49,5 @@ let empleado = new Empleado ("Janteh", "Amiztlan")
 
 console.log(gerente1.obtenerDetalles())
 
-imprimir(empleado)
-imprimir (gerente1)
+determinarTipoObjetc(empleado)
+determinarTipoObjetc (gerente1)
