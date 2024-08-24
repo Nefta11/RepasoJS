@@ -170,3 +170,8 @@ let orden1= new Orden();
 orden1.agregarComputadora(pc1);
 orden1.agregarComputadora(pc2);
 orden1.mostrarOrden();
+
+let orden2 = new Orden()
+orden2.agregarComputadora(pc1);
+orden2.agregarComputadora(pc2);
+orden2.mostrarOrden()
