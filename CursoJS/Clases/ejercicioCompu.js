@@ -49,3 +49,28 @@ console.log(raton1.toString())
 
 let raton2 = new Raton ("Bluethoo", "Dell")
 console.log(raton2.toString())
+
+
+class Teclado extends DispositivosEntrada{
+
+    static contadorTeclados = 1;
+    constructor(tipoEntrada,marca){
+        super(tipoEntrada,marca)
+
+        this._idTeclado = Teclado.contadorTeclados++;
+    }
+
+    get idTeclado(){
+        return this._idTeclado;
+    }
+
+    toString(){
+        return `Teclado: idTeclado:${this._idTeclado}, tipoEntrada: ${this._tipoEntrada}, Marca: ${this._marca}`
+    }
+}
+
+teclado1 = new Teclado ("usb","Magic")
+teclado2=new Teclado("Bluethoo","Acer")
+console.log(teclado1.toString())
+console.log(teclado2.toString())
+
