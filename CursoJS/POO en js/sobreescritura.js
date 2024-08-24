@@ -32,7 +32,7 @@ console.log(    tipo.obtenerDetalles())
     //Por lo que dependiendo el tipo sera la forma en que se mande a llama al metodo
 
     //Ahora utilizaremos la palabra instance OF
-    if(tipo instanceof Gerente){
+    if(tipo instanceof Gerente){// PONER LA CLASE DE MAYOR JERARQUIA SIEMPRE
         console.log("Es un objeto del tipo gerente")
         console.log(tipo.departamento)
     }
