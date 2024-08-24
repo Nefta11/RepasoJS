@@ -133,3 +133,9 @@ monitor2=new Monitor("Samsung",17)
 
 console.log(monitor1.toString())
 console.log(monitor2.toString())
+
+
+let pc1 = new Computadora("Lenovo", monitor1, raton1, teclado1)
+let pc2 = new Computadora("ARmada", monitor2, raton2, teclado2 )
+console.log(pc1.toString())
+console.log(pc2.toString())
