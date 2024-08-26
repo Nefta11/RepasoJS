@@ -32,7 +32,6 @@ function sumar(op1,op2, imprimir){
 sumar(11,7,imprimir);
 
 //Llamadas asincronas con uso de setTimeOut
-
 function miFuncionCallback(){
     console.log("Saludo asincrono despues de 3 segundos")
 }
