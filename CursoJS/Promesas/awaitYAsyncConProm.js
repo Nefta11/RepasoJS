@@ -20,4 +20,18 @@ async function funcionConPromesaYAwait() {
     console.log(await miPromesa);//await solo se puede usar dentro de una funcion declarada con async
 }
 
-funcionConPromesaYAwait();
+//funcionConPromesaYAwait();
+
+//promesas, await, async y setTimeOut
+
+async function funcionconPromesaAwaitSetTimeOut() {
+    console.log("Inicio de promesa")
+    let miPromesa= new Promise(resolved =>{
+        setTimeout(()=> resolved("promesa con await y timeout"),3000);
+    });
+    console.log(await miPromesa)
+    console.log("Fin de la promesa")
+}
+
+funcionconPromesaAwaitSetTimeOut();
+
