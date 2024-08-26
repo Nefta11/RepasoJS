@@ -1,0 +1,1 @@
+//Manjeo de errores en js
