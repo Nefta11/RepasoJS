@@ -8,7 +8,11 @@ let miPromesa = new Promise((resolved,rejected)=>{
 
 });
 
+//Primer ejemplo
 miPromesa.then(
     valor => console.log(valor),
     error => console.log(error)
 );
+
+//segundo ejemplo con otra sintaxis
+miPromesa.then(valor => console.log(valor)).catch(error)
