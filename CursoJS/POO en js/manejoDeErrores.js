@@ -5,8 +5,9 @@
 // ejemplo de uso de try
 
 try {
-    mifuncion()
-    x = 10;
+    //mifuncion()
+    let  x = 10;
+    throw "Mi error"; // forma de arrojas nuestros propios errores
 } catch (error) {
     console.log(error)
 }
