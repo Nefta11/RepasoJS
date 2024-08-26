@@ -30,3 +30,17 @@ function sumar(op1,op2, imprimir){
 }
 
 sumar(11,7,imprimir);
+
+//Llamadas asincronas con uso de setTimeOut
+
+function miFuncionCallback(){
+    console.log("Saludo asincrono despues de 3 segundos")
+}
+
+setTimeout(miFuncionCallback, 3000);//Despues de 3 segundos
+
+setTimeout(function(){console.log("saludo asincrono 2")},4000)//pasando la funcion como parametros
+
+setTimeout(()=>console.log("saludo asincrono 3"), 1000)
+
+//De esta manera se utiliza el setTimeOut
