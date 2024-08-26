@@ -9,9 +9,13 @@ let miPromesa = new Promise((resolved,rejected)=>{
 
 
 let promesa = new Promise((resolver)=>{
-    console.log("inicion promesa")
     setTimeout(()=>resolver("Saludos con promesa y timeOut"),3000)
-    console.log("fin promesa")
 });
 
-promesa.then(valor => console.log(valor));
+//async indica que una funcion regresara una promesa
+
+async function  miFuncionConPromesa() {
+    return "Saludos con promesa y async";
+}
+
+miFuncionConPromesa().then(valor => console.log(valor));
